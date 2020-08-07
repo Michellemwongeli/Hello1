@@ -9,16 +9,16 @@ class CoursesActivity : AppCompatActivity() {
         setContentView(R.layout.activity_courses)
 
         var courses listOf(
-        courses("7865657890","Python","567","Ray","major")
-        courses("7865546728","HTML","876","Bronze","minor")
-        courses("7865678435","CSS","654","Michelle","minor")
-        courses("7865765789","Ruby","089","Tim","minor")
-        courses("7865890654","Java","980","Tom","major")
-        courses("7865432123","JavaScript","987","Tay","major")
-        courses("7865432123","C++","543","Cyr","minor")
-        courses("7865456","Php","423","Griffin","major")
-        courses("7865654321","Ruby","432","Joy","minor")
-        courses("7865098765","Rust","544","Jay","major")
+        courses("7865657890","Erlang","437","Trey","major")
+        courses("7865546728","Ruby","766","Brianna","minor")
+        courses("7865678435","CSS","654","Mozz","minor")
+        courses("7865765789","HTML089","Ian","minor")
+        courses("7865890654","Java","980","Dee","major")
+        courses("7865432123","JavaScript","987","Jay","major")
+        courses("7865432123","C++","543","Cyrystal","minor")
+        courses("7865456", "PHP","423","Joan","major")
+        courses("7865654321","R","432","Lily","minor")
+        courses("7865098765","Rust","544","Christelle","major")
 
         )
 
