@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <EditText
+        android:id="@+id/edtFirstName"
+        android:layout_width="295dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:text="First Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtLastName"
+        android:layout_width="288dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Last Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtFirstName" />
+
+    <EditText
+        android:id="@+id/edPhoneNumber"
+        android:layout_width="292dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="Phone Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtLastName" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="294dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="E-mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPhoneNumber" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="290dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edEmail" />
+
+    <EditText
+        android:id="@+id/edConfirmPassword"
+        android:layout_width="286dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Confirm Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="52dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/ic_baseline_person_24"
+        app:layout_constraintEnd_toStartOf="@+id/edtFirstName"
+        app:layout_constraintTop_toTopOf="parent" /><![CDATA[
+
+    tools:layout_editor_absoluteY="161dp" />
+
+
+
+    ]]>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="52dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/ic_baseline_person_24"
+
+        app:layout_constraintEnd_toStartOf="@+id/edtLastName"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="48dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/edPhoneNumber"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:src="" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="38dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toStartOf="@+id/edEmail"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@android:drawable/sym_action_email" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="48dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/edPassword"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@android:drawable/ic_secure" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/edPassword"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@android:drawable/ic_secure" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edConfirmPassword"
+        tools:text="Sign Up" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/edPhoneNumber"
+        app:srcCompat="@android:drawable/stat_sys_phone_call" />
+</androidx.constraintlayout.widget.ConstraintLayout>
