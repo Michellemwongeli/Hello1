@@ -1,31 +1,29 @@
-package com.gamecodeschool.hello1
+package com.example.firstapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.gamecodeschool.hello1.Courses
+import com.gamecodeschool.hello1.R
+import kotlinx.android.synthetic.main.activity_courses.*
 
-class CoursesActivity : AppCompatActivity() {
+
+class CourseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_courses)
 
-        var courses listOf(
-        courses("7865657890","Erlang","437","Trey","major")
-        courses("7865546728","Ruby","766","Brianna","minor")
-        courses("7865678435","CSS","654","Mozz","minor")
-        courses("7865765789","HTML089","Ian","minor")
-        courses("7865890654","Java","980","Dee","major")
-        courses("7865432123","JavaScript","987","Jay","major")
-        courses("7865432123","C++","543","Cyrystal","minor")
-        courses("7865456", "PHP","423","Joan","major")
-        courses("7865654321","R","432","Lily","minor")
-        courses("7865098765","Rust","544","Christelle","major")
+        var coursesList = listOf<Courses>(
+            Courses("60", "Java", "java87", "Michelle Nthumo", "Java Intro"),
+            Courses("50", "JavaScript", "js453", "Purity Maina", "JS Class"),
+            Courses("174", "JSON", "json3", "Wycliffe Omar", "JSON classes"),
+            Courses("879", "Kotlin", "Kotlin45", "Jeymo", "intro to kot"),
+            Courses("654", "Navigating", "Nav34", "Betty Njambi", "Python Intro"),
+            Courses("89", "C++", "C++900", "Edwin Gwein", "C++ Class"),
+            Courses("909", "Ruby", "Ruby", "Katerina Musa", "Ruby classes")
 
         )
-
+        rvCourses.layoutManager = LinearLayoutManager(baseContext)
+        rvCourses.adapter = CoursesRecyclerViewAdapter(courseList)
     }
-    rvCourses.adapter =coursesRecyclerAdapterView
-
-
-
-
-    }
+}

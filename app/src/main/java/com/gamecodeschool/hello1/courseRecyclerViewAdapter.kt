@@ -1,43 +1,39 @@
-package com.gamecodeschool.hello1import android.view.LayoutInflater
+package com.example.hello
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.helloo.Courses
-import com.example.helloo.R
+import kotlinx.android.synthetic.main.course_item.view.*
+
+class CourseRecyclerViewAdapter(private val courseList: ArrayList<Course>) :
+    RecyclerView.Adapter<CourseRecyclerViewAdapter.MyViewHolder>() {
 
 
+    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
-class courseRecyclerViewAdapter {import android.text.Layout
-
-
-    abstract class CoursesRecyclerViewAdapter (
-        val courses:List<CoursesRecyclerViewAdapter>):
-        RecyclerView.Adapter<CoursesRecyclerViewAdapter.CoursesViewHolder>(){
-        abstract override fun onCreateViewHolder(
-            parent: ViewGroup,
-            viewType: Int
-        ): CoursesRecyclerViewAdapter.CoursesViewHolder (
-
-        LayoutInflater.from(parent.context).inflate(R.layout.item_courses,parent,false)
-        )
-        override fun getItemCount() = courses.size
-
-        override fun onBindViewHolder(
-            holder: CoursesRecyclerViewAdapter.CoursesViewHolder,
-            position: Int) {
-            val courses = courses[position]
-            holder.itemView.id.text = course.id
-            holder.itemView.name.text = course.name
-            holder.itemView.code = course.code
-            holder.itemView.id.instructor = course.instructor
-            holder.itemView.description = course.description
-        }
-
-        class CoursesViewHolder ( View: View) : RecyclerView.ViewHolder(view)
-
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+        val layoutInflater = LayoutInflater.from(parent.context)
+        val view = layoutInflater.inflate(R.layout.course_item, parent, false)
+        return MyViewHolder(view)
     }
 
-    )
-}
+    override fun getItemCount(): Int {
 
-}
+        return courseList.size
+    }
+
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+
+        val course = courseList[position]
+
+        holder.itemView.also {
+            it.name.text = course.courseName
+            it.course_id.text = course.courseId.toString()
+            it.instructor.text = course.instructor
+            it.code.text = course.courseCode.toString()
+            it.description.text = course.description
+
+        }
+
+    }
+}s
