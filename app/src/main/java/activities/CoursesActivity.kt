@@ -1,5 +1,7 @@
 package com.example.firstapp
 
+import Api.ApiInterface
+import activities.CoursesAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,6 +17,9 @@ import com.gamecodeschool.hello1.ApiInterface
 import com.gamecodeschool.hello1.CoursesAdapter
 
 import kotlinx.android.synthetic.main.activity_courses.*
+import kotlinx.android.synthetic.main.activity_courses_adapter.*
+import models.Courses
+import models.CoursesResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -47,11 +52,11 @@ class CoursesActivity : AppCompatActivity() {
                     var coursesAdapter = CoursesAdapter(courseList)
                     rvCourses.layoutManager = LinearLayoutManager(baseContext)
                     val rvCourses = null
-                    rvCourses.adapter = coursesAdapter
                 } else {
                     Toast.makeText(baseContext, response.errorBody().toString(), Toast.LENGTH_LONG)
                         .show()
-                }
+                }                    rvCourses.adapter = coursesAdapter
+
             }
         })
     }

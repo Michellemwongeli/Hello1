@@ -1,12 +1,14 @@
-package com.gamecodeschool.hello1
+package activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 import android.preference.PreferenceManager
-import com.example.firstapp.CourseActivity
+import com.example.firstapp.CoursesActivity
 import com.example.hello.MainActivity
+import com.gamecodeschool.hello1.R
+import models.Courses
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +22,7 @@ class SplashActivity : AppCompatActivity() {
             val intent = Intent(baseContext, MainActivity::class.java)
             startActivity(intent)
         } else {
-            val intent = Intent(baseContext, CourseActivity::class.java)
+            val intent = Intent(baseContext, CoursesActivity::class.java)
             startActivity(intent)
         }
     }

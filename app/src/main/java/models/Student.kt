@@ -1,4 +1,4 @@
-package com.gamecodeschool.hello1
+package models
 
 import com.google.gson.annotations.SerializedName
 

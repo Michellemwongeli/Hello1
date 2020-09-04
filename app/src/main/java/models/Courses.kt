@@ -1,4 +1,4 @@
-package com.gamecodeschool.hello1
+package models
 
 data class Courses (
     var courseId: String,

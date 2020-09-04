@@ -3,9 +3,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.gamecodeschool.hello1.R
 import kotlinx.android.synthetic.main.course_item.view.*
+import models.Courses
 
-class CourseRecyclerViewAdapter(private val courseList: ArrayList<Course>) :
+class CourseRecyclerViewAdapter(private val courseList: ArrayList<Courses>) :
     RecyclerView.Adapter<CourseRecyclerViewAdapter.MyViewHolder>() {
 
 

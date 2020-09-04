@@ -1,6 +1,6 @@
-package com.gamecodeschool.hello1
+package Api
 
-import android.app.DownloadManager
+import com.gamecodeschool.hello1.RegistrationResponse
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.POST
