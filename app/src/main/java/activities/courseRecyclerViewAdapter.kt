@@ -38,4 +38,4 @@ class CourseRecyclerViewAdapter(private val courseList: ArrayList<Courses>) :
         }
 
     }
-}s
+}
